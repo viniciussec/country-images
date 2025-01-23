@@ -5,7 +5,7 @@ const imagePath = __dirname + "/images/";
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.sendFile("Hello World!");
 });
 
 app.get("/images/:name", (req, res) => {
